@@ -58,6 +58,50 @@ color: red;
 .font_family{
     font-family: "標楷體";
 }
+/* link連結 */
+/* 位訪問 */
+.a_css:link{
+    color: red;
+}
+/* 訪問過 */
+.a_css:visited{
+    color: green;
+}
+/* 移入 */
+.a_css:hover{
+    color: yellow;
+}
+/* 點下去*/
+.a_css:active{
+    color: black;
+}
+/* list列表 */
+.ul_css{
+    /* 類型 */
+    /* list-style-type:nono */
+    list-style-type:upper-roman;
+    /* 位置 */
+    list-style-position: inside;
+    /* 圖片 */
+    list-style-image: url('kiss.png');
+}
+.table_css{
+    border-collapse: collapse;
+}
+.table_css .tt{
+    /* 水平 */
+        text-align: center;
+    /* 垂直 */
+        vertical-align: bottom;
+}
+/* 偶數行 */
+tr:nth-child(even){
+    color: red;
+}
+/* 奇數行 */
+tr:nth-child(odd){
+    color: green;
+}
 </style>
 </head>
 <body>
@@ -65,5 +109,40 @@ color: red;
     text文字
 </div>
 <div class="font_style font_weight font_size font_family">Font字型</div>
+<div>
+    <a class="a_css" href="#">連結1</a>
+    <a class="a_css" href="#a">連結2</a>
+    <a class="a_css" href="#b">連結3</a>
+</div>
+
+<div>
+   <ul class="ul_css">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+</div>
+<table class="table_css" align="center" cellpadding="0" cellspacing="0" border="1" width="300" height="300">
+    <tr>
+        <td class="tt">001</td>
+        <td class="tt">002</td>
+        <td class="tt">003</td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+    </tr>
+</table>
 </body>
 </html>
